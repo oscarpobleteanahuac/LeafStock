@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE php>
+<php lang="en">
    <head>
       <!-- basic -->
       <meta charset="utf-8">
@@ -48,7 +48,7 @@
                   <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col logo_section">
                      <div class="full">
                         <div class="center-desk">
-                           <div class="logo"> <a href="index.html"><img src="images/Leaf_logo.png" alt="#"></a> </div>
+                           <div class="logo"> <a href="index.php"><img src="images/Leaf_logo.png" alt="#"></a> </div>
                         </div>
                      </div>
                   </div>
@@ -57,11 +57,11 @@
                         <div class="limit-box">
                            <nav class="main-menu">
                               <ul class="menu-area-main">
-                                 <li> <a href="index.html">Home</a> </li>
-                                 <li> <a href="about.html">About</a> </li>
-                                 <li><a href="testmonial.html">Testmonial</a></li>
-                                 <li><a href="clients.html">Shop</a></li>
-                                 <li><a href="contact.html">Contact Us</a></li>
+                                 <li> <a href="index.php">Home</a> </li>
+                                 <li> <a href="about.php">About</a> </li>
+                                 <li><a href="testmonial.php">Testmonial</a></li>
+                                 <li><a href="clients.php">Shop</a></li>
+                                 <li><a href="contact.php">Contact Us</a></li>
                                  <li class="last"><a href="#"><img src="images/search_icon.png" alt="icon"/></a></li>
                               </ul>
                            </nav>
@@ -147,7 +147,7 @@
      <!-- footer start-->
       <div id="plant" class="footer layout_padding">
          <div class="container">
-            <p>© 2019 All Rights Reserved. Design by<a href="https://html.design/"> Free Html Templates</a></p>
+            <p>© 2019 All Rights Reserved. Design by<a href="https://php.design/"> Free Html Templates</a></p>
          </div>
       </div>
 
@@ -183,4 +183,4 @@
 
 
 </body>
-</html>
+</php>

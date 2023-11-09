@@ -48,7 +48,7 @@
                   <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col logo_section">
                      <div class="full">
                         <div class="center-desk">
-                           <div class="logo"> <a href="index.html"><img src="images/Leaf_logo.png" alt="#"></a> </div>
+                           <div class="logo"> <a href="index.php"><img src="images/Leaf_logo.png" alt="#"></a> </div>
                         </div>
                      </div>
                   </div>
@@ -57,11 +57,11 @@
                         <div class="limit-box">
                            <nav class="main-menu">
                               <ul class="menu-area-main">
-                                 <li> <a href="index.html">Home</a> </li>
-                                 <li> <a href="about.html">About</a> </li>
-                                 <li><a href="testmonial.html">Testmonial</a></li>
-                                 <li><a href="clients.html">Shop</a></li>
-                                 <li><a href="contact.html">Contact Us</a></li>
+                                 <li> <a href="index.php">Home</a> </li>
+                                 <li> <a href="about.php">About</a> </li>
+                                 <li><a href="testmonial.php">Testmonial</a></li>
+                                 <li><a href="clients.php">Shop</a></li>
+                                 <li><a href="contact.php">Contact Us</a></li>
                                  <li class="last"><a href="#"><img src="images/search_icon.png" alt="icon"/></a></li>
                               </ul>
                            </nav>
@@ -90,7 +90,7 @@
                               <h1>Welcome to <strong class="color">Our Shop</strong></h1>
                               <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
                               <a class="btn btn-lg btn-primary" href="#" role="button">Buy Now</a>
-                              <a class="btn btn-lg btn-primary" href="about.html" role="button">About </a>
+                              <a class="btn btn-lg btn-primary" href="about.php" role="button">About </a>
                            </div>
                         </div>
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
@@ -109,7 +109,7 @@
                               <h1>Welcome to <strong class="color">Our Shop</strong></h1>
                               <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
                               <a class="btn btn-lg btn-primary" href="#" role="button">Buy Now</a>
-                              <a class="btn btn-lg btn-primary" href="about.html" role="button">About</a>
+                              <a class="btn btn-lg btn-primary" href="about.php" role="button">About</a>
                            </div>
                         </div>
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
@@ -128,7 +128,7 @@
                               <h1>Welcome to <strong class="color">Our Shop</strong></h1>
                               <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
                               <a class="btn btn-lg btn-primary" href="#" role="button">Buy Now</a>
-                              <a class="btn btn-lg btn-primary" href="about.html" role="button">About</a>
+                              <a class="btn btn-lg btn-primary" href="about.php" role="button">About</a>
                            </div>
                         </div>
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
@@ -484,10 +484,10 @@
                      <div class="menu_text">
                         <ul>
                            <li class="active"><a href="#">Home</a></li>                         
-                           <li><a href="about.html">About</a></li>
-                           <li><a href="testmonial.html">Testmonial</a></li>
-                           <li><a href="clients.html">Shop</a></li>
-                           <li><a href="contact.html">Contact Us</a></li>
+                           <li><a href="about.php">About</a></li>
+                           <li><a href="testmonial.php">Testmonial</a></li>
+                           <li><a href="clients.php">Shop</a></li>
+                           <li><a href="contact.php">Contact Us</a></li>
                         </ul>
                      </div>
                   </div>
