@@ -141,11 +141,8 @@
 right: -221px;
     }
     .Nursery-img .text-box h3 {padding: 111px 50px;}
-    .contact .titlepage h2::after {
-    left: -650px;
-width: 30%;
-   }
-   .sporrt_text { margin-top: 0px;}
+
+   .about_text { margin-top: 0px;}
    #main_slider a.carousel-control-prev {
     display: none;
    }
@@ -166,7 +163,7 @@ width: 30%;
         font-size: 36px;
         padding-top: 0px;
     }
-    .sport_product {
+    .store_product {
 
     margin-bottom: 20px;
 
@@ -185,16 +182,13 @@ width: 30%;
 #main_slider a.carousel-control-next {
     display: none;
 }
-.sporrt_text { margin-top: 0px; font-size: 24px;}
+.about_text { margin-top: 0px; font-size: 24px;}
 .email_btn { padding: 41px;}
-    .btn-primary {max-width: 144px;}
+    .btn-primary.custom-btn {max-width: 144px;}
     .titlepage h2::after {width: 79%;}
     .about-box .titlepage h2::after {width: 73%;
 right: -88px;}
-   .contact .titlepage h2::after {
-left: -403px;
-width: 41%;
-   }
+
 .paddimg-right {
     padding-right: 15px;
 }
@@ -217,7 +211,7 @@ width: 41%;
 font-size: 42px;
 display: block; 
 }
-.sport_product {
+.store_product {
 
     margin-bottom: 20px;
 
@@ -235,7 +229,7 @@ display: block;
     top: 64%;
     display: none;
 }
-.btn-primary {
+.btn-primary.custom-btn {
     margin-top: 0px;
     margin-left: -7px;
 }
@@ -251,7 +245,7 @@ width: 88%;
 
 .about-box .titlepage h2::after {width: 45%;
 right: -281px;}
-.sporrt_text { margin-top: 0px;}
+.about_text { margin-top: 0px;}
 .Nursery-img .text-box h3 {
 font-size: 36px;
 padding: 126px 40px;
@@ -259,10 +253,7 @@ padding: 126px 40px;
 .main {
     width: 20%;}
 
-.contact .titlepage h2::after {
-    left: -234px;
-width: 55%;
-}
+
     .img-box {display: none;}
     .plane_secsun_2 {
 
@@ -276,8 +267,8 @@ width: 55%;
     .last {display: none;}
     .carousel-caption {display: none;} 
 .header {padding-top: 30px;}
-.logo {float: inherit; padding-bottom: 15px; text-align: center;}
-.btn-primary {max-width: 126px;
+.logo {float: inherit; padding-bottom: 15px; text-align: center; max-width: 40%; margin: 0 auto; }
+.btn-primary.custom-btn {max-width: 126px;
 margin-right: 2px;
 font-size: 14px;}
 .banner-main .carousel-caption h1 {font-size: 30px;
@@ -285,7 +276,7 @@ line-height: 38px;}
 .titlepage h2 {
     font-size: 27px;
 }
-.sport_product {
+.store_product {
 
     margin-bottom: 20px;
 
@@ -295,7 +286,7 @@ line-height: 38px;}
     margin-top: 0px;
 
 }
-.sporrt_text{ 
+.about_text{ 
      font-size: 23px; 
      margin-top: 0px;
 }
@@ -321,7 +312,7 @@ line-height: 38px;}
     transform: rotateY(180deg);
 }
 
-.sport_product figure img {
+.store_product figure img {
     max-height: 200px;
     padding: 20px;
 }
@@ -352,11 +343,6 @@ padding: 30px 14px;
 
 }
 
-.contact .titlepage h2::after {
-
-    left: -8px;
-width: 281px;
-}
 .footer .headinga span {
 font-size: 16px;
 

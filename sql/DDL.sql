@@ -1,58 +1,53 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2639
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+-- Categories table
+CREATE TABLE categories (
+    category_id INT AUTO_INCREMENT PRIMARY KEY,
+    category_name VARCHAR(255) NOT NULL
+);
 
-\f0\fs24 \cf0 -- Categories Table\
-CREATE TABLE Categories (\
-    Category_ID INT AUTO_INCREMENT PRIMARY KEY,\
-    Category_Name VARCHAR(255) NOT NULL\
-);\
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
-\cf0 \
--- Products Table\
-CREATE TABLE Products (\
-    Product_ID INT AUTO_INCREMENT PRIMARY KEY,\
-    Name VARCHAR(255) NOT NULL,\
-    Description TEXT,\
-    Photos VARCHAR(255),\
-    Price DECIMAL(10, 2) NOT NULL,\
-    Quantity_In_Stock INT NOT NULL,\
-    Manufacturer VARCHAR(255),\
-    Origin VARCHAR(255),\
-    Category_ID INT,\
-    FOREIGN KEY (Category_ID) REFERENCES Categories(Category_ID)\
-);\
-\
--- Users Table\
-CREATE TABLE Users (\
-    User_ID INT AUTO_INCREMENT PRIMARY KEY,\
-    User_Name VARCHAR(255) NOT NULL,\
-    Email VARCHAR(255) NOT NULL,\
-    Password VARCHAR(255) NOT NULL,\
-    Date_of_Birth DATE,\
-    Credit_Card_Number VARCHAR(16),\
-    Postal_Address TEXT\
-);\
-\
--- Purchase History Table\
-CREATE TABLE Purchase_History (\
-    Purchase_ID INT AUTO_INCREMENT PRIMARY KEY,\
-    User_ID INT,\
-    Product_ID INT,\
-    FOREIGN KEY (User_ID) REFERENCES Users(User_ID),\
-    FOREIGN KEY (Product_ID) REFERENCES Products(Product_ID)\
-);\
-\
--- Shopping Cart Table\
-CREATE TABLE Shopping_Cart (\
-    Cart_Product_ID INT AUTO_INCREMENT PRIMARY KEY,\
-    User_ID INT,\
-    Product_ID INT,\
-    FOREIGN KEY (User_ID) REFERENCES Users(User_ID),\
-    FOREIGN KEY (Product_ID) REFERENCES Products(Product_ID)\
-);\
-\
-}
+-- Products table
+CREATE TABLE products (
+    product_id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    description TEXT,
+    photo VARCHAR(255),
+    price DECIMAL(10, 2) NOT NULL,
+    quantity INT NOT NULL,
+    manufacturer VARCHAR(255),
+    origin VARCHAR(255),
+    category_id INT,
+    FOREIGN KEY (category_id) REFERENCES categories(category_id)
+);
+
+-- Users table
+CREATE TABLE users (
+    user_id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    pwd VARCHAR(255) NOT NULL,
+    birth_date DATE,
+    card_number VARCHAR(16),
+    postal_address TEXT,
+    admin BOOLEAN DEFAULT false NOT NULL
+);
+
+-- Purchase History table
+CREATE TABLE purchase_history (
+    purchase_id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT,
+    product_id INT,
+    quantity INT,
+    total_price DECIMAL(10, 2),  -- Adjust precision as needed
+    purchase_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(user_id),
+    FOREIGN KEY (product_id) REFERENCES products(product_id)
+);
+
+
+-- Shopping Cart table
+CREATE TABLE shopping_cart (
+    cart_id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT,
+    product_id INT,
+    FOREIGN KEY (user_id) REFERENCES users(user_id),
+    FOREIGN KEY (product_id) REFERENCES products(product_id)
+);

@@ -30,6 +30,7 @@
 
 html {
      scroll-behavior: smooth;
+     height: 100%;
 }
 
 body {
@@ -283,7 +284,7 @@ button {
      color: #00631f;
      font-weight: 400;
      font-size: 28px;
-     background-image: url('../images/fevicon.png');
+     background-image: url('../images/favicon.png');
      background-repeat: no-repeat;
      padding-left: 55px;
      letter-spacing: -0.5px;
@@ -513,7 +514,7 @@ ul.top_icon li a {
      padding: 18px 0 0;
 }
 
-.main-menu ul>li nth:child(5) a {
+.main-menu ul>li nth:child(4) a {
      padding-right: 0px;
 }
 
@@ -911,6 +912,7 @@ ul.top_icon li a {
      line-height: 10px;
 }
 
+
 .wish-box {
      float: right;
 }
@@ -994,6 +996,16 @@ ul.top_icon li a {
      border-radius: 2px;
 }
 
+.cart-bubble {
+     background-color: rgb(2 174 62 / 50%);
+     color: #ffffff;
+     padding: 5px 10px;
+     border-radius: 50%;
+     position: absolute;
+     top: 0;
+     right: 0;
+ }
+ 
 .cart-content-box .items .item {
      margin-bottom: 10px;
      padding-bottom: 10px;
@@ -1160,7 +1172,7 @@ ul.top_icon li a {
 .main-menu ul>li a:hover {
      color: #fff;
 }
-.main-menu ul>li:nth-child (6) {
+.main-menu ul>li:nth-child(6) {
      padding-right: 0px;
 }
 .nav>li {
@@ -1582,6 +1594,11 @@ input[type="radio"] .styled:checked+label::after {
 .marginii {
      margin: 154px 0px 100px 0px;
 }
+
+.marginii-2 {
+     margin: 80px 0px 100px 0px;
+}
+
 .carousel-indicators li {
      display: none;
 }
@@ -1613,7 +1630,7 @@ input[type="radio"] .styled:checked+label::after {
 }
 .btn-primary {
      background: #00631f;
-     border: indianred;
+     border: rgb(7, 7, 7);
      max-width: 170px;
      width: 100%;
      margin-right: 10px;
@@ -1628,6 +1645,15 @@ input[type="radio"] .styled:checked+label::after {
 }
 .img-box figure img {
      box-shadow: #00631f 0px 0px 0px 0px;
+     height: auto; 
+}
+
+.img-box figure {
+     margin: 0;
+}
+.img-box figure img {
+     box-shadow: #00631f 0px 0px 0px 0px;
+     height: auto; 
 }
 .layout_padding {
      padding-top:  90px 0px;
@@ -1644,7 +1670,9 @@ input[type="radio"] .styled:checked+label::after {
      position: relative;
      margin-bottom: 20px;
 }
-
+input {
+     width: 100%;
+ }
 .titlepage span {
      color: #00631f;
 font-size: 17px;
@@ -1652,7 +1680,20 @@ line-height: 31px;
 display: block;
 font-weight: normal;
 }
-.clothes_main{
+
+.featured-text {
+     font-weight: bold;
+     color: #28cc03;
+  }
+
+  
+.featured-text-2 {
+     font-weight: bold;
+     color: #00631f;
+  }
+
+  
+.shop_main{
      width: 100%; 
      float: left;
      background-color: #00631f;
@@ -1792,6 +1833,9 @@ font-weight: normal;
 .green {
      background-color: #6fb936;
 }
+.green-text{
+    color:  #00631f;
+}
 .page-top {
      margin-top: 85px;
 }
@@ -1859,36 +1903,47 @@ img.zoom {
      padding: 5px 38px;
      color: #fff;
 }
-.contact {
-     background: #fff;
-     padding-top: 90px;
-}
+
 .paddimg-right {
      padding-right: 0px;
 }
 .paddimg-left {
      padding-left: 0px;
 }
-.contact .titlepage {
-     padding-bottom: 5px;
-}
-.contact .titlepage h2 {
-     padding: 0px 0px 0px 0px;
-     font-size: 50px;
-     font-weight: bold;
-     color: #00631f;
-     line-height: 50px;
-     position: relative;
-     margin-bottom: 20px;
-}
 
 .map_section figure {
      margin: 0px;
 }
 form {
-     background: #00631f
+     background: #00631f;
      padding: 35px 30px;
 }
+
+.form-2 {
+     background-color: #28cc03; 
+     padding: 35px 30px;
+  }
+
+.form-3 {
+     background-color: white; 
+     padding: 35px 30px;
+  }
+
+body {
+     display: flex;
+     min-height: 100vh;
+     flex-direction: column;
+  }
+  
+  main {
+     flex: 1;
+  }
+
+  
+  .signup-link {
+     text-align: center;
+     margin-top: 20px;
+  }
 .map_section figure img {
      width: 100%;
 }
@@ -2047,9 +2102,7 @@ ul.location_icon span {
 }
 
 /*--------------------------------------------------------------------- inner_page css ---------------------------------------------------------------------*/
-.about_page .about {
-     margin-bottom: 90px;
-}
+
 .about-bg {
      background-color: #b32137;
      margin-top: 90px;
@@ -2068,12 +2121,6 @@ ul.location_icon span {
      padding: 40px 0;
      font-weight: 500;
      text-align: center;
-}
-.contact-page .Contact {
-     margin-top: 0px;
-}
-.contact-page .form-control {
-     margin-bottom: 20px;
 }
 
 /** slider arrow **/
@@ -2103,7 +2150,7 @@ ul.location_icon span {
     padding: 17px 0px; }
 
 
-.sport_product {
+.store_product {
     padding: 40px 20px;
     background: #fff;
     text-align: center;
@@ -2111,8 +2158,8 @@ ul.location_icon span {
 }
 .price_text {font-size: 20px; color: #28cc03;}
 
-.sport_product figure {margin:0;}
-.sport_product figure img {height: 300px;}
+.store_product figure {margin:0;}
+.store_product figure img {height: 300px;}
 .new-text {
 
     position: absolute;
@@ -2150,9 +2197,9 @@ ul.location_icon span {
 
 .margin-top_130 {
      margin-top: 130px !important;
-}
+} 
 
-.sport_product .images-main {
+.store_product .images-main {
 
     margin: 0;
     width: 100%;
@@ -2162,12 +2209,12 @@ ul.location_icon span {
 
 }  
 
-.sport_product h3 {
+.store_product h3 {
      font-size: 29px;
 line-height: 25px;
 padding-top: 25px;
 }
-.sport_product h4 {
+.store_product h4 {
      color: #00631f;
      font-size: 24px;
 line-height: 24px;
@@ -2200,7 +2247,7 @@ font-weight:normal;
 line-height: 18px;  
 }
 
-.sport_product_main{
+.store_product_main{
     min-height: 590px;
     background: #28cc03;
     position: relative;
@@ -2229,7 +2276,7 @@ line-height: 18px;
      width: 100%;
 }
 
-.sporrt_text{ 
+.about_text{ 
      width: 100%; 
      float: left; 
 
@@ -2320,23 +2367,6 @@ line-height: 30px;
      padding-top: 30px;
 }
 
-.contact_us{
-     width: 100%;
-     float: left;
-     padding: 0px;
-}
-
-.contact_us_2{
-     width: 100%; 
-     float: left;
-     background-image: url(../images/contact-banner.png);
-     height: auto;  
-     padding-top: 100px;
-     padding-bottom: 100px;
-     background-size: cover;
-}
-
-
 
 .soc_text{
      width: 100%;
@@ -2371,15 +2401,6 @@ line-height: 30px;
      margin-top: 60px;
 }
 
-.contact_us_3{
-     width: 100%; 
-     float: left;
-     background-color: #00631f;
-     height:auto;
-     padding:40px;
-     position: relative;
-    top: -40px;
-}
 .long_text{
      width: 100%; 
      float: left;
@@ -2393,15 +2414,15 @@ line-height: 30px;
      margin-top: 30px;
  }
 
-.Address {
+.Contact{
     width: 100%;
     float: left;
     background-color: #00631f;
     height: auto;
-    padding: 83px 0 0 0;
+    padding: 8px 0 0 0;
 }
 
-.address_text{
+.contact_text{
      width: 100%;
      text-align: center;
      margin: 0px;
@@ -2415,7 +2436,7 @@ line-height: 30px;
     margin-top: 40px;
  }
 
- .address_2{
+ .contact_2{
      width: 100%;
      float: left;
  }
@@ -2425,8 +2446,8 @@ line-height: 30px;
      color: #fff; 
 }
 
- .address{
-     padding-left: 30px; 
+ .contact{
+     padding-left: 50px; 
      color: #fff;
  }
 
@@ -2449,7 +2470,7 @@ line-height: 30px;
  }
   .menu_text li{
      float: left;
-     padding-left: 50px;
+     padding-left: 80px;
      color: #fff;
   }
 
@@ -2461,7 +2482,7 @@ line-height: 30px;
      color: #28cc03;
  }
 
- .active{ color: #00631f; }
+ .active{ color: #3e7a51; }
 
 .footer{
      width: 100%;
@@ -2478,13 +2499,6 @@ line-height: 30px;
      text-align: center;
      }
 
- .contact_us_3 {
-    margin-top: 90px;
-    margin-bottom: -105px;
-    box-shadow: 0px 0px 8px 0px;
-    color: #00631f; 
-}   
-
 .site_info {
     display: flex;
     color: #fff;
@@ -2494,7 +2508,7 @@ line-height: 30px;
 .info_icon {
     background-color: #fff;
     padding: 20px;  
-    margin-right: 30px;  
+    margin-right: 40px;  
     width: 60px;
 height: 60px;
 border-radius: 10px;
@@ -2513,10 +2527,14 @@ border-radius: 10px;
      margin-top: 20px;
 }
 
-button.btn.btn-primary,button.btn.btn-primary:hover,button.btn.btn-primary:focus {
+button.btn.btn-primary,button.btn.btn-primary:focus {
     background: #28cc03;
     padding: 10 40px;
 }
+button.btn.btn-primary:hover {
+     background: rgb(2 174 62 / 50%);
+     color: white;
+ }
 
 .padding-top_0 {
      padding-top: 0 !important;
@@ -2526,11 +2544,14 @@ button.btn.btn-primary,button.btn.btn-primary:hover,button.btn.btn-primary:focus
      padding-bottom: 0 !important; 
 }
 
+.product_labels{
+     color:#00631f;
+}
 
 #main_slider .carousel-control-prev, #main_slider .carousel-control-next {
     width: 65px;
     height: 65px;
-    background: #fff;
+    background: #ffffff;
     opacity: 1;
     font-size: 30px;
     color: #00631f;
@@ -2553,7 +2574,7 @@ button.btn.btn-primary,button.btn.btn-primary:hover,button.btn.btn-primary:focus
 #main_slider .carousel-control-next:hover,
 #main_slider .carousel-control-prev:focus,
 #main_slider .carousel-control-next:focus {
-     background: #00631f;
+     background: #61a577;
      color: #fff;
 }
 
@@ -2576,28 +2597,180 @@ line-height: 50px;
 margin-bottom: 20px;
 text-align: center;
 }
-.contact_us .titlepage h2 {text-align: center;}
+
 .form-control {
 
     padding: 13px 16px;
 
 }
 
+.form_body{
+     display: flex;
+     min-height: 100vh;
+     flex-direction: column;
+     html, body {
+          height: 100%;
+       }
+}
+  
+.form_main {
+     flex: 1;
+}
+  
+  .form-label {
+     display: block;
+     margin-bottom: 5px;
+     color: #fffcfc;
+     font-weight: normal; 
+ }
+
+ .signup-form  {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     min-height: 100vh;
+}
+
+.signup-form  {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     min-height: 100vh;
+}
+
+.signup-form form {
+     width: 700px;
+}
+
+
+.login-link {
+     text-align: center;
+     margin-top: 20px;
+ }
+
+ .login-form  {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     min-height: 90vh;
+}
+
+.login-form form {
+     width: 700px;
+}
+
+
+.login-form-container {
+     width: 80%; 
+     max-width: 450px; 
+ }
+
+ .signup-form-container {
+     width: 80%; 
+     max-width: 450px; 
+ }
+
+.signup-link {
+     text-align: center;
+     margin-top: 20px;
+ }
+
+ .error-message {
+     color: red;
+     font-weight: normal;
+ }
+
+ .user-info-table {
+     width: 100%;
+     border-collapse: collapse;
+     background-color: white;
+ }
+
+ .user-info-table,
+ .user-info-table td,
+ .user-info-table th {
+     border: 1px solid green;
+ }
+
+ .user-info-table td,
+ .user-info-table th {
+     padding: 10px;
+     text-align: left;
+ }
+
+ .user-info-button {
+     margin-top: 30px;
+     background-color: #00631f;
+     color: #fff;
+     border: none;
+     padding: 10px 20px;
+     cursor: pointer;
+     border-radius: 40px;
+ }
+
+ .cart-container  {
+     display: flex;
+     min-height: 100vh;
+}
+
+
+.confirmation-form  {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     min-height: 75vh;
+}
+
+.confirmation-form form {
+     width: 700px;
+}
+
+.confirmation-form-container {
+     width: 80%; 
+     max-width: 450px; 
+ }
+ 
+ .orderid-form  {
+     display: flex;
+     flex-direction: column;
+     min-height: 75vh;
+}
+
+.orderid-form form {
+     width: 500px;
+}
+
+.orderid-form-container {
+     width: 100%; 
+     max-width: 750px; 
+ }
 .footer p {color: #fff;}
 .footer p a {color: #fff;}
 .footer p a:hover {color: #fff;}
 
 
 
-.product_pagr .clothes_main{margin-bottom: 30px;}
+.product_page .shop_main{margin-bottom: 30px;}
 
 .main-menu ul > li a {padding-top: 5px;}
 
-.sport_product {
+.store_product {
 
     margin-bottom: 20px;
 
 }
 
 
-.about_pape .banner-main {margin-bottom: 60px;}
+.login_page {margin-bottom: 60px;}
+
+.signup_page{margin-bottom: 60px;}
+
+.info_page {margin-bottom: 60px;}
+
+.cart_page {margin-bottom: 60px;}
+
+.about_page .banner-main {margin-bottom: 10px;}
